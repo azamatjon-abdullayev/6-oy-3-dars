@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+{% for i in courses %}
+<ul>
+    <li>Nomi: {{i.title}}</li>
+    <li>Tegi: {{i.description}}</li>
+    <li><img src="{{ i.image.url }}"></li>
+</ul>
+{% endfor %}
+</body>
+</html>
